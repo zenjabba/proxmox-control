@@ -1,0 +1,4 @@
+[proxmox]
+host = https://proxmox.example.com:8006
+user = root@pam
+password = your_password 

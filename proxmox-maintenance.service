@@ -1,0 +1,14 @@
+[Unit]
+Description=Proxmox Maintenance Web Interface
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/proxmox-maintenance
+Environment="PATH=/opt/proxmox-maintenance/venv/bin"
+ExecStart=/opt/proxmox-maintenance/venv/bin/gunicorn --workers 3 --bind 0.0.0.0:5000 web_interface:app
+Restart=always
+
+[Install]
+WantedBy=multi-user.target 
