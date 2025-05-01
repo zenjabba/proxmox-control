@@ -11,7 +11,7 @@ A web-based tool for managing Proxmox VE nodes in maintenance mode. This tool pr
 Run this command in your Proxmox LXC container:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/yourusername/proxmox-maintenance/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/zenjabba/proxmox-maintenance/main/install.sh | bash
 ```
 
 After installation:
